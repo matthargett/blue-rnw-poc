@@ -3,6 +3,30 @@ import { Text, View } from 'react-native';
 import Styles from './Styles/RootContainerStyle'
 
 export default class RootContainer extends Component {
+
+  constructor(props: Object) {
+    super(props)
+    this.state = {
+      someNumber: 0
+    }
+    
+  }
+
+  componentDidMount() {
+    this.timer = window.setInterval(this._fpsFlub, 1000)
+  }
+
+  componentWillUnmount() {
+    this.clearInterval(this.timer)
+  }
+
+  _fpsFlub = () => {
+    const min = 30
+    const max = 70
+    let someNumber = Math.round(Math.random() * (max - min) + min) 
+    this.setState({someNumber})
+  }
+
   render() {
     return (
       <View style={Styles.mainContainer}>
@@ -21,8 +45,8 @@ export default class RootContainer extends Component {
               Hardware
             </Text>
             <Text style={Styles.updateText}>
-              Render:49 fps.
-            </Text>         
+              Render:{this.state.someNumber} fps.
+            </Text>       
             <Text style={Styles.updateText}>
               Stream:0 fps. 
             </Text>   

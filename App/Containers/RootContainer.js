@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import Styles from './Styles/RootContainerStyle'
+import * as Animatable from 'react-native-animatable'
 
 export default class RootContainer extends Component {
 
@@ -30,26 +31,37 @@ export default class RootContainer extends Component {
   render() {
     return (
       <View style={Styles.mainContainer}>
-        <View style={Styles.textSection}>
-          <Text style={Styles.titleSection}>
-            BlueJeans Design Sprint
-          </Text>
-            <Text>
-              00:00
+        <View style={Styles.horizontal}>
+          <View style={Styles.textSection}>
+            <Text style={Styles.titleSection}>
+              BlueJeans Design Sprint
             </Text>
-          <View style={Styles.horizontal}>
-            <Text style={Styles.updateText}>
-              0x0
-            </Text>
-            <Text style={Styles.updateText}>
-              Hardware
-            </Text>
-            <Text style={Styles.updateText}>
-              Render:{this.state.someNumber} fps.
-            </Text>       
-            <Text style={Styles.updateText}>
-              Stream:0 fps. 
-            </Text>   
+              <Text>
+                00:00
+              </Text>
+            <View style={Styles.horizontal}>
+              <Text style={Styles.updateText}>
+                0x0
+              </Text>
+              <Text style={Styles.updateText}>
+                Hardware
+              </Text>
+              <Text style={Styles.updateText}>
+                Render:{this.state.someNumber} fps.
+              </Text>       
+              <Text style={Styles.updateText}>
+                Stream:0 fps. 
+              </Text>   
+            </View>
+          </View>
+          <View style={Styles.controlsSection}>
+            <Animatable.View 
+              animation="pulse" 
+              iterationCount="infinite" 
+              style={Styles.attendeesButton}
+            >
+              <Text style={Styles.attendeesText}>6</Text>
+            </Animatable.View>
           </View>
         </View>
       </View>

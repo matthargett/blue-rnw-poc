@@ -19,12 +19,32 @@ export default StyleSheet.create({
   attendeesButton: {
     backgroundColor: Colors.charCoal,
     justifyContent: 'center',
+    flexDirection: 'row',
     borderRadius: Metrics.buttonRadius,
-    paddingHorizontal: Metrics.doubleBaseMargin
+    paddingHorizontal: Metrics.doubleBaseMargin,
+    marginHorizontal: Metrics.baseMargin
   },
   attendeesText: {
     color: Colors.snow,
     textAlign: 'center',
-    ...Fonts.style.h3
+    ...Fonts.style.h3,
+    margin: Metrics.baseMargin
+  },
+  user: {
+    width: Metrics.images.medium,
+    height: Metrics.images.medium,
+    marginVertical: Metrics.baseMargin
+  },
+  chat: {
+    width: Metrics.images.normal,
+    height: Metrics.images.normal,
+    padding: Metrics.baseMargin,
+    marginHorizontal: Metrics.baseMargin
+  },
+  settings: {
+    width: Metrics.images.normal,
+    height: Metrics.images.normal,
+    marginHorizontal: Metrics.baseMargin
   }
+
 })

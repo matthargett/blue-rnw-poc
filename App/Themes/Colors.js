@@ -9,6 +9,7 @@ const colors = {
   snow: 'white',
   coal: '#1f1f1f',
   charCoal: '#030303',
+  highlight: '#FF0066'
 }
 
 export default colors

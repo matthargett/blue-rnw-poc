@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image, TouchableHighlight } from 'react-native';
 import Styles from './Styles/RootContainerStyle'
 import * as Animatable from 'react-native-animatable'
+import { Images, Colors } from '../Themes/'
 
 export default class RootContainer extends Component {
 
@@ -55,13 +56,22 @@ export default class RootContainer extends Component {
             </View>
           </View>
           <View style={Styles.controlsSection}>
-            <Animatable.View 
-              animation="pulse" 
-              iterationCount="infinite" 
-              style={Styles.attendeesButton}
-            >
-              <Text style={Styles.attendeesText}>6</Text>
-            </Animatable.View>
+            <View style={Styles.horizontal}>
+              <Animatable.View 
+                animation="pulse" 
+                iterationCount="infinite" 
+                style={Styles.attendeesButton}
+              >
+                <Image source={Images.user} style={Styles.user} />
+                <Text style={Styles.attendeesText}>6</Text>
+              </Animatable.View>
+              <TouchableHighlight onPress={() => null} underlayColor={Colors.highlight}>
+                <Image source={Images.chat} style={Styles.chat} />
+              </TouchableHighlight>
+              <TouchableHighlight onPress={() => null} underlayColor={Colors.highlight}>
+                <Image source={Images.settings} style={Styles.settings} />
+              </TouchableHighlight>
+            </View>
           </View>
         </View>
       </View>

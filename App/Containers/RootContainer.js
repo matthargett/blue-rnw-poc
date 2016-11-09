@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, Image, TouchableHighlight } from 'react-native';
 import Styles from './Styles/RootContainerStyle'
 import * as Animatable from 'react-native-animatable'
+import WinGif from '../Components/WinGif'
 import { Images, Colors } from '../Themes/'
 
 export default class RootContainer extends Component {
@@ -74,6 +75,9 @@ export default class RootContainer extends Component {
             </View>
           </View>
         </View>
+        <WinGif
+          source={Images.cat}
+         />
       </View>
     );
   }

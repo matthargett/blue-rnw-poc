@@ -32,6 +32,7 @@ namespace RNPOC2
                 return new List<IReactPackage>
                 {
                     new MainReactPackage(),
+                    new ReactWinGifPackage(),
                 };
             }
         }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, Image, TouchableHighlight } from 'react-native';
 import Styles from './Styles/RootContainerStyle'
 import * as Animatable from 'react-native-animatable'
-import WinGif from '../Components/WinGif'
+import WinGif from 'react-native-win-gif'
 import { Images, Colors } from '../Themes/'
 
 export default class RootContainer extends Component {

@@ -42,3 +42,4 @@ android/keystores/debug.keystore
 
 #Strange windows
 *.VC.db
+*.VC.VC.opendb

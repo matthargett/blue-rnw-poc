@@ -75,9 +75,12 @@ export default class RootContainer extends Component {
             </View>
           </View>
         </View>
-        <WinGif
-          source={Images.cat}
-         />
+        <View style={Styles.horizontal}>
+          <WinGif source={Images.cat} />
+          <WinGif source={Images.stairs} />
+          <WinGif source={Images.beg} />
+          <WinGif source={Images.typer} />
+        </View>
       </View>
     );
   }

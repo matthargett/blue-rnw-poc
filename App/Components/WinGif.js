@@ -22,17 +22,13 @@ export default class WinGif extends React.Component {
       uri = `file://${uri}`
     }
 
-    const nativeProps = Object.assign({}, this.props)
-    Object.assign(nativeProps, {
-      src: {
-        uri
-      }
-    })
+    const nativeProps = {
+      ...this.props,
+      src: {uri}
+    }
 
     return (
         <WinGifNative
-          style={{width: 400, height: 400}}
-          onGifFail={() => window.alert('HAI')}
           {...nativeProps}
         />
     )

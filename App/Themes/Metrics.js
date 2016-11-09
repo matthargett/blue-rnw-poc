@@ -29,7 +29,8 @@ const metrics = {
     medium: 40,
     normal: 60,
     large: 160,
-    logo: 300
+    logo: 300,
+    huge: 350
   }
 }
 

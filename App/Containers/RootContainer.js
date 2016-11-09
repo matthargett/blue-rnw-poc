@@ -76,10 +76,11 @@ export default class RootContainer extends Component {
           </View>
         </View>
         <View style={Styles.horizontal}>
-          <WinGif source={Images.cat} />
-          <WinGif source={Images.stairs} />
-          <WinGif source={Images.beg} />
-          <WinGif source={Images.typer} />
+          <WinGif source={Images.cat} style={Styles.videoBox} />
+          <WinGif source={Images.stairs}  style={Styles.videoBox} />
+          <WinGif source={Images.beg}  style={Styles.videoBox} />
+          <WinGif source={Images.typer} style={Styles.videoBox}  />
+          <WinGif source={{ uri: 'https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstream1.gifsoup.com%2Fview2%2F1567149%2Fdun-dun-dun-o.gif'}} style={Styles.videoBox}  />
         </View>
       </View>
     );

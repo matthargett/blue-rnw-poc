@@ -45,6 +45,11 @@ export default StyleSheet.create({
     width: Metrics.images.normal,
     height: Metrics.images.normal,
     marginHorizontal: Metrics.baseMargin
+  },
+  videoBox: {
+    width: Metrics.images.huge,
+    height: Metrics.images.huge,
+    margin: Metrics.baseMargin
   }
 
 })

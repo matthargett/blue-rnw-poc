@@ -50,6 +50,19 @@ export default StyleSheet.create({
     width: Metrics.images.huge,
     height: Metrics.images.huge,
     margin: Metrics.baseMargin
-  }
+  },
+  dragBar: {
+    width: 300,
+    height: 80,
+    borderRadius: Metrics.borderRadius,
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    backgroundColor: Colors.charCoal
+  },
+  container: {
+    flex: 1,
+    paddingTop: 64,
+  } 
 
 })

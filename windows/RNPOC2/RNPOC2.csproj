@@ -202,6 +202,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\node_modules\react-native-video\windows\ReactNativeVideo\ReactNativeVideo.csproj">
+      <Project>{e8f5f57f-757e-4237-ad23-f7a8755427cd}</Project>
+      <Name>ReactNativeVideo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\node_modules\react-native-win-gif\windows\RNWinGif\RNWinGif.csproj">
       <Project>{0e2bec40-a5fc-11e6-8b87-9b29b026386a}</Project>
       <Name>RNWinGif</Name>

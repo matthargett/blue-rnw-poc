@@ -3,6 +3,7 @@ using ReactNative.Modules.Core;
 using ReactNative.Shell;
 using System.Collections.Generic;
 using Com.Reactlibrary.RNWinGif;
+using ReactNativeVideo;
 
 namespace RNPOC2
 {
@@ -33,7 +34,8 @@ namespace RNPOC2
                 return new List<IReactPackage>
                 {
                     new MainReactPackage(),
-                    new RNWinGifPackage()
+                    new RNWinGifPackage(),
+                    new ReactVideoPackage()
                 };
             }
         }

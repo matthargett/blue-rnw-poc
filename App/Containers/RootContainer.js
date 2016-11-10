@@ -4,6 +4,7 @@ import Styles from './Styles/RootContainerStyle'
 import * as Animatable from 'react-native-animatable'
 import WinGif from 'react-native-win-gif'
 import { Images, Colors } from '../Themes/'
+import Video from 'react-native-video'
 
 export default class RootContainer extends Component {
 
@@ -144,6 +145,13 @@ export default class RootContainer extends Component {
           <WinGif source={Images.beg}  style={Styles.videoBox} />
           <WinGif source={Images.typer} style={Styles.videoBox}  />
           <WinGif source={{ uri: 'https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstream1.gifsoup.com%2Fview2%2F1567149%2Fdun-dun-dun-o.gif'}} style={Styles.videoBox}  />
+        </View>
+        <View>
+          <Video
+            source={{uri: "http://www.w3schools.com/html/mov_bbb.mp4"}}
+            style={{width: 200, height: 200}}
+            repeat={true}
+          />
         </View>
         { this._renderDragMenu() }
       </View>

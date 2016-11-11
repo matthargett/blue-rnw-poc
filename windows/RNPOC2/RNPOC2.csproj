@@ -178,6 +178,8 @@
     </Compile>
     <Compile Include="MainPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReactCaptureElementPackage.cs" />
+    <Compile Include="ReactCaptureElementViewManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

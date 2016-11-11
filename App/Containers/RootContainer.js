@@ -5,6 +5,7 @@ import * as Animatable from 'react-native-animatable'
 import WinGif from 'react-native-win-gif'
 import { Images, Colors } from '../Themes/'
 import Video from 'react-native-video'
+import CaptureElement from './CaptureElement'
 
 export default class RootContainer extends Component {
 
@@ -72,14 +73,20 @@ export default class RootContainer extends Component {
           </View>
           <View style={Styles.controlsSection}>
             <View style={Styles.horizontal}>
-              <Animatable.View 
+              {/*<Animatable.View 
                 animation="pulse" 
                 iterationCount="infinite" 
                 style={Styles.attendeesButton}
               >
                 <Image source={Images.user} style={Styles.user} />
                 <Text style={Styles.attendeesText}>6</Text>
-              </Animatable.View>
+              </Animatable.View>*/}
+              <View 
+                style={Styles.attendeesButton}
+              >
+                <Image source={Images.user} style={Styles.user} />
+                <Text style={Styles.attendeesText}>6</Text>
+              </View>
               <TouchableHighlight onPress={() => null} underlayColor={Colors.highlight}>
                 <Image source={Images.chat} style={Styles.chat} />
               </TouchableHighlight>
@@ -138,14 +145,18 @@ export default class RootContainer extends Component {
   render() {
     return (
       <View style={Styles.mainContainer}>
-        <Video
+        {/*<Video
           resizeMode='cover'
           source={{uri: "http://media.webcollage.net/rlfp/wc/live/module/dysonus/_cp/products/1442240961455/tab-d37c6a37-1c28-4b6e-b7c4-05c741aee9e6/fda17b82-dcc7-431d-88ab-7ca74d260b2a.mp4.mp4full.mp4"}}
           style={Styles.videoBackdrop}
           rate={1}
           volume={1}
           repeat={true}
-        />   
+        />*/}
+        <CaptureElement
+          enabled={true}
+          style={Styles.videoBackdrop}
+        />
         { this._renderTopStats() }
         <View style={Styles.horizontal}>     
           <Video

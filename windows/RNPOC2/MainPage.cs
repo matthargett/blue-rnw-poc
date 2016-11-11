@@ -35,7 +35,8 @@ namespace RNPOC2
                 {
                     new MainReactPackage(),
                     new RNWinGifPackage(),
-                    new ReactVideoPackage()
+                    new ReactVideoPackage(),
+                    new ReactCaptureElementPackage(),
                 };
             }
         }

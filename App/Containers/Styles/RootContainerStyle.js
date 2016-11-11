@@ -63,6 +63,18 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 64,
-  } 
+  },
+  videoBox: {
+    width: 200,
+    height: 200,
+    padding: 20
+  },
+  videoBackdrop: {
+    position: 'absolute',
+    left: 0, 
+    top: 0,
+    bottom: 0,
+    right: 0
+  }
 
 })

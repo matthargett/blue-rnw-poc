@@ -138,22 +138,34 @@ export default class RootContainer extends Component {
   render() {
     return (
       <View style={Styles.mainContainer}>
+        <Video
+          resizeMode='cover'
+          source={{uri: "http://media.webcollage.net/rlfp/wc/live/module/dysonus/_cp/products/1442240961455/tab-d37c6a37-1c28-4b6e-b7c4-05c741aee9e6/fda17b82-dcc7-431d-88ab-7ca74d260b2a.mp4.mp4full.mp4"}}
+          style={Styles.videoBackdrop}
+          rate={1}
+          volume={1}
+          repeat={true}
+        />   
         { this._renderTopStats() }
-        <View style={Styles.horizontal}>
-          <WinGif source={Images.cat} style={Styles.videoBox} />
-          <WinGif source={Images.stairs}  style={Styles.videoBox} />
-          <WinGif source={Images.beg}  style={Styles.videoBox} />
-          <WinGif source={Images.typer} style={Styles.videoBox}  />
-          <WinGif source={{ uri: 'https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstream1.gifsoup.com%2Fview2%2F1567149%2Fdun-dun-dun-o.gif'}} style={Styles.videoBox}  />
-        </View>
-        <View>
+        <View style={Styles.horizontal}>     
           <Video
             source={{uri: "http://www.w3schools.com/html/mov_bbb.mp4"}}
-            style={{width: 200, height: 200}}
+            style={Styles.videoBox}
             rate={1}
             volume={1}
             repeat={true}
           />
+          <Video
+            source={{uri: "http://vid937.photobucket.com/albums/ad217/heyetter/4732video_zpse8eb65c8.mp4"}}
+            style={Styles.videoBox}
+            rate={1}
+            volume={1}
+            repeat={true}
+          />
+        </View>
+        <View>
+
+         
         </View>
         { this._renderDragMenu() }
       </View>

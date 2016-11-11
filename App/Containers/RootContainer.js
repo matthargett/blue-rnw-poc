@@ -150,6 +150,8 @@ export default class RootContainer extends Component {
           <Video
             source={{uri: "http://www.w3schools.com/html/mov_bbb.mp4"}}
             style={{width: 200, height: 200}}
+            rate={1}
+            volume={1}
             repeat={true}
           />
         </View>

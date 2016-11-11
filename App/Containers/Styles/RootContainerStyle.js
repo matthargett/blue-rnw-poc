@@ -65,9 +65,10 @@ export default StyleSheet.create({
     paddingTop: 64,
   },
   videoBox: {
-    width: 200,
-    height: 200,
-    padding: 20
+    width: 300,
+    height: 300,
+    padding: 20,
+    margin: 20
   },
   videoBackdrop: {
     position: 'absolute',

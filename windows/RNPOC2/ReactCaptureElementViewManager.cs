@@ -30,26 +30,26 @@ namespace RNPOC2
                 // Create MediaCapture and its settings
                 var mediaCapture = new MediaCapture();
 
-                var settings = new MediaCaptureInitializationSettings
-                {
-                    VideoDeviceId = device.Id
-                };
-
                 // Initialize MediaCapture
                 try
                 {
+                    var settings = new MediaCaptureInitializationSettings
+                    {
+                        VideoDeviceId = device.Id
+                    };
                     await mediaCapture.InitializeAsync(settings);
+
+                    view.Source = mediaCapture;
+                    view.FlowDirection = FlowDirection.RightToLeft;
+                    view.Stretch = Stretch.UniformToFill;
+
+                    await mediaCapture.StartPreviewAsync().AsTask().ConfigureAwait(false);
                 }
                 catch (Exception e)
                 {
 
                 }
 
-                view.Source = mediaCapture;
-                view.FlowDirection = FlowDirection.RightToLeft;
-                view.Stretch = Stretch.UniformToFill;
-
-                await mediaCapture.StartPreviewAsync().AsTask().ConfigureAwait(false);
             }
             else
             {

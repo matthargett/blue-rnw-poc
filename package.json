@@ -12,7 +12,7 @@
     "react-native-animatable": "^0.6.1",
     "react-native-win-gif": "^1.0.5",
     "react-native-windows": "^0.36.1",
-    "react-native-video": "rozele/react-native-video#windows"
+    "react-native-video": "react-native-community/react-native-video"
   },
   "jest": {
     "preset": "jest-react-native"
